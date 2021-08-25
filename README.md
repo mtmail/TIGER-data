@@ -35,7 +35,7 @@ US Postocodes
 -------------
 Addtionally create a `us_postcodes.csv.gz` file with centroid coordinates.
 
-    cat output-path/*.csv | ./postcode_coordinates_stream.py | sort -n | ./calculate_postcode_centroids.py | gzip > us_postcodes.csv.gz
+    cat output-path/*.csv | ./calculate_postcode_centroids.py | gzip -9 > us_postcodes.csv.gz
 
 
 License
